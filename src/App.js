@@ -125,8 +125,10 @@ function App() {
 
             </ListItemText>
             <ListItemSecondaryAction>
+              <IconButton onClick={() => deleteTodo(todo)}>
+                <DeleteIcon />
+              </IconButton>
               <Checkbox checked={todo.isCompleted} onChange={() => toggleComplete(todo)} />
-
             </ListItemSecondaryAction>
           </ListItem>
         ))}
