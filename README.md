@@ -1,4 +1,4 @@
-# Buggy React Application - Built For Interview Usage
+# A (Buggy) Todo Application
 
 This is an intentionally buggy react-application, built to facilitate interviews for Front-end Developer positions. Specifically, this application can be used in an interview setting to see how candidates approach real-time debugging of an existing application. In addition to to seeing how well candidates can identify bugs in an existing application, this exercise allows interviewers to gauge how candidates go about their debugging process and operate in a collaborative setting.
 
