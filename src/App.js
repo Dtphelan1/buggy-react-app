@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { v4 as uuidv4 } from 'uuid';
 import _ from 'lodash';
 import { makeStyles } from '@material-ui/core/styles';
 import {
@@ -7,6 +6,7 @@ import {
 } from '@material-ui/core';
 import DeleteIcon from '@material-ui/icons/Delete';
 
+// Define the styles using MaterialUi's makeStyles
 const useStyles = makeStyles((theme) => ({
   root: {
     maxHeight: '100vh',
@@ -23,8 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
   dividerInset: {
     margin: `5px 0 0 ${theme.spacing(2)}px`,
-  },
-
+  }
 }));
 
 function App() {
@@ -35,13 +34,22 @@ function App() {
   // Create an object corresponding to the current, inprogress todo stored in the textField
   const [currentTodoText, setCurrentTodoText] = useState('');
 
-  // A function for creating a new Todo
-  function newTodo(text) {
-    return {
+  // Create a new todo based on the provided text
+  function createNewTodo(text) {
+    const newTodo = {
       id: 1,
       todo: text,
       isCompleted: false,
     };
+    return newTodo
+  }
+
+  // Add a todo to our todos list
+  function addTodo() {
+    const clonedTodos = [...todos]
+    const newTodo = createNewTodo(currentTodoText)
+    clonedTodos.push(newTodo)
+    setTodos(clonedTodos);
   }
 
   // Toggle the isCompleted flag on the todo
@@ -63,8 +71,7 @@ function App() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          const newTodos = [...todos, newTodo(currentTodoText)];
-          setTodos(newTodos);
+          addTodo();
         }}
       >
         <TextField
@@ -94,7 +101,7 @@ function App() {
               {todo.todo}
             </ListItemText>
             <ListItemSecondaryAction>
-              <Checkbox checked={todo.isCompleted} value={todo.isCompleted} onChange={() => toggleComplete(todo)} />
+              <Checkbox checked={todo.isCompleted} value={todo.isCompleted} onClick={() => toggleComplete(todo)} />
               <IconButton onClick={() => deleteTodo(todo)}>
                 <DeleteIcon />
               </IconButton>
@@ -122,7 +129,6 @@ function App() {
           <ListItem button key={i}>
             <ListItemText>
               {todo.todo}
-
             </ListItemText>
             <ListItemSecondaryAction>
               <IconButton onClick={() => deleteTodo(todo)}>
