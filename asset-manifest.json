@@ -1,22 +1,20 @@
 {
   "files": {
     "main.css": "/buggy-react-app/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/buggy-react-app/static/js/main.79854966.chunk.js",
-    "main.js.map": "/buggy-react-app/static/js/main.79854966.chunk.js.map",
-    "runtime-main.js": "/buggy-react-app/static/js/runtime-main.df1e9c29.js",
-    "runtime-main.js.map": "/buggy-react-app/static/js/runtime-main.df1e9c29.js.map",
-    "static/js/2.7f1dc93f.chunk.js": "/buggy-react-app/static/js/2.7f1dc93f.chunk.js",
-    "static/js/2.7f1dc93f.chunk.js.map": "/buggy-react-app/static/js/2.7f1dc93f.chunk.js.map",
-    "static/js/3.a32191bf.chunk.js": "/buggy-react-app/static/js/3.a32191bf.chunk.js",
-    "static/js/3.a32191bf.chunk.js.map": "/buggy-react-app/static/js/3.a32191bf.chunk.js.map",
+    "main.js": "/buggy-react-app/static/js/main.df9525f5.chunk.js",
+    "main.js.map": "/buggy-react-app/static/js/main.df9525f5.chunk.js.map",
+    "runtime-main.js": "/buggy-react-app/static/js/runtime-main.8aebdcc3.js",
+    "runtime-main.js.map": "/buggy-react-app/static/js/runtime-main.8aebdcc3.js.map",
+    "static/js/2.e8b37fc6.chunk.js": "/buggy-react-app/static/js/2.e8b37fc6.chunk.js",
+    "static/js/2.e8b37fc6.chunk.js.map": "/buggy-react-app/static/js/2.e8b37fc6.chunk.js.map",
     "index.html": "/buggy-react-app/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/buggy-react-app/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.7f1dc93f.chunk.js.LICENSE.txt": "/buggy-react-app/static/js/2.7f1dc93f.chunk.js.LICENSE.txt"
+    "static/js/2.e8b37fc6.chunk.js.LICENSE.txt": "/buggy-react-app/static/js/2.e8b37fc6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.df1e9c29.js",
-    "static/js/2.7f1dc93f.chunk.js",
+    "static/js/runtime-main.8aebdcc3.js",
+    "static/js/2.e8b37fc6.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.79854966.chunk.js"
+    "static/js/main.df9525f5.chunk.js"
   ]
 }
